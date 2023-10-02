@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@500&family=Poppins:wght@300&family=Quicksand:wght@300&family=Sora:wght@700&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>HelpMeOut</title>
+</head>
+<body>
+    <div class="container hide">
+        <div class="cover">
+            <div class="head">
+                <div class="logo">
+                    <img src="images/logo.png" alt="">
+                    <p>HelpMeOut</p>  
+                </div>
+                <div class="settings">
+                    <i class="fa-solid fa-gear setting"></i>
+                    <i class="fa-regular fa-circle-xmark close"></i>
+                </div>
+            </div>
+            <p class="text">
+                This extension helps you record and share help videos with ease.
+            </p>
+            <div class="selectTab">
+                <div class="fullScreen tabs tabsActive">
+                    <i class="fa-solid fa-tv tv"></i>
+                    <p>Full screen</p>
+                </div>
+                <div class="currentTab tabs">
+                    <i class="fa-regular fa-window-restore currentTv"></i>
+                    <p>Current Tab</p>
+                </div>
+            </div>
+            <div class="cameraContainer">
+                <div class="video auvi">
+                    <i class="fa-solid fa-video"></i>
+                    <p>Camera</p>
+                </div>
+                <div class="toggleBtn camera">
+                    <div class="toggler"></div>
+                </div>
+            </div>
+            <div class="audioContainer">
+                <div class="audio auvi">
+                    <i class="fa-solid fa-microphone"></i>
+                    <p>Audio</p>
+                </div>
+                <div class="toggleBtn mic">
+                    <div class="toggler"></div>
+                </div>
+            </div>
+            <button class="startRecording">
+                Start Recording
+            </button>
+        </div>
+    </div>
+    <!-- <div class="recordController">
+        <p class="timer"></p>
+        <i class="fa-solid fa-pause pauseBtn"></i>
+        <i class="fa-solid fa-stop stopBtn"></i>
+        <i class="fa-solid fa-video videoBtn"></i>
+        <i class="fa-solid fa-microphone audioBtn"></i>
+        <i class="fa-solid fa-trash-can"></i>
+    </div> -->
+    <script src="app.js"></script>
+</body>
+</html>

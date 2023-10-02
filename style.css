@@ -1,0 +1,348 @@
+:root {
+  --blue:rgba(18, 11, 72, 1);
+  --blur:rgba(182, 179, 198, 1);
+}
+
+body {
+  width: auto;
+}
+
+.cover {
+  height: 439px;
+  width: 300px;
+  border-radius: 24px;
+  padding: 24px 24px 32px 24px;
+  gap: 32px;
+}
+
+.cover .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.cover .head .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 70%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.cover .head .logo img {
+  height: 1.2rem;
+  margin-right: .4rem;
+}
+
+.cover .head .logo p {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20.16px;
+  color: var(--blue);
+}
+
+.cover .head .settings {
+  width: 18%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cover .head .settings .setting {
+  color: var(--blue);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.cover .head .settings .close {
+  font-size: 20px;
+  color: var(--blur);
+  cursor: pointer;
+}
+
+.cover .text {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 14px;
+  line-height: 16.42px;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  color: #413c6d;
+  width: 100%;
+}
+
+.cover .selectTab {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+}
+
+.cover .selectTab .fullScreen, .cover .selectTab .currentTab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: var(--blur);
+  width: 40%;
+  cursor: pointer;
+}
+
+.cover .selectTab .fullScreen i, .cover .selectTab .currentTab i {
+  font-size: 32px;
+}
+
+.cover .selectTab .fullScreen p, .cover .selectTab .currentTab p {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.cover .selectTab .tabsActive {
+  color: var(--blue);
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.cover .selectTab .tabsActive i {
+  font-size: 32px;
+}
+
+.cover .selectTab .tabsActive p {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.cover .cameraContainer, .cover .audioContainer {
+  height: 48px;
+  width: 98%;
+  border-radius: 12px;
+  border: 1px solid var(--blue);
+  padding: 0px 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.cover .cameraContainer .auvi, .cover .audioContainer .auvi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 70%;
+  color: var(--blue);
+}
+
+.cover .cameraContainer .auvi i, .cover .audioContainer .auvi i {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.cover .cameraContainer .auvi p, .cover .audioContainer .auvi p {
+  font-weight: 500;
+  font-size: 14px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.cover .cameraContainer .toggleBtn, .cover .audioContainer .toggleBtn {
+  height: 20px;
+  width: 36px;
+  border-radius: 12px;
+  background-color: var(--blue);
+  margin-right: .8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.cover .cameraContainer .toggleBtn .toggler, .cover .audioContainer .toggleBtn .toggler {
+  position: absolute;
+  right: 5%;
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.cover .cameraContainer .toggleBtnActive, .cover .audioContainer .toggleBtnActive {
+  height: 20px;
+  width: 36px;
+  border-radius: 12px;
+  background-color: var(--blur);
+  margin-right: .8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.cover .cameraContainer .toggleBtnActive .toggler, .cover .audioContainer .toggleBtnActive .toggler {
+  position: absolute;
+  left: 5%;
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.cover .startRecording, .cover .stopRecording {
+  height: 51px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  background: #120b48;
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  color: #fafdff;
+  font-family: 'Work Sans', sans-serif;
+  cursor: pointer;
+}
+
+.cover .startRecording:hover, .cover .stopRecording:hover {
+  background-color: white;
+  color: var(--blue);
+  border: 1px solid var(--blue);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.recordController {
+  width: 551px;
+  height: 86px;
+  padding: 12px 40px 12px 16px;
+  position: fixed;
+  bottom: 5%;
+  left: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  border-radius: 200px;
+  gap: 8px;
+  background: #141414;
+}
+
+.extContainer {
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */

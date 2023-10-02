@@ -1,0 +1,231 @@
+
+:root{
+    --blue:rgba(18, 11, 72, 1);
+    --blur:rgba(182, 179, 198, 1);
+}
+body{
+    width: auto;
+}
+// .container{
+//     position: fixed;
+//     top: 0%;
+//     right: 4%;
+//     background-color: white;
+//     z-index: 999999999;
+// }
+// .hide{
+//     display: none;
+// }
+// .hide{
+//     display: flex;
+// }
+.cover{
+    height:439px;
+    width:300px;
+    border-radius: 24px;
+    padding: 24px 24px 32px 24px;
+    gap: 32px;
+    .head{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        .logo{
+            display: flex;
+            flex-direction: row;
+            width: 70%;
+            align-items: center;
+            justify-content: flex-start;
+            img{
+                height: 1.2rem;
+                margin-right: .4rem;
+            }
+            p{
+                font-family: 'Work Sans', sans-serif;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 20.16px;
+                color: var(--blue);
+            }
+        }
+        .settings{
+            width: 18%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            .setting{
+                color: var(--blue);
+                font-size: 20px;
+                cursor: pointer;
+            }
+            .close{
+                font-size: 20px;
+                color: var(--blur);
+                cursor: pointer;
+            }
+        }
+    }
+    .text{
+        font-family: 'Work Sans', sans-serif;
+        font-size: 14px;
+        line-height: 16.42px;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        justify-content:flex-start;
+        color: rgba(65, 60, 109, 1);
+        width: 100%;
+    }
+    .selectTab{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:center;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 600;
+        .fullScreen, .currentTab{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content:center;
+            color: var(--blur);
+            width: 40%;
+            cursor: pointer;
+            i{
+                font-size: 32px;
+            }
+            p{
+                font-family: 'Work Sans', sans-serif;
+                font-weight: 600;
+                font-size: 15px;
+            }
+        }
+        .tabsActive{
+            color: var(--blue);
+            width: 40%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content:center;
+            cursor: pointer;
+            i{
+                font-size: 32px;
+            }
+            p{
+                font-family: 'Work Sans', sans-serif;
+                font-weight: 600;
+                font-size: 15px;
+            }
+        }
+    }
+    .cameraContainer, .audioContainer{
+        height: 48px;
+        width: 98%;
+        border-radius: 12px;
+        border: 1px solid var(--blue);
+        padding: 0px 3px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 1.5rem;
+        .auvi{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            width: 70%;
+            color: var(--blue);
+            i{
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+            p{
+                font-weight: 500;
+                font-size: 14px;
+                font-family: 'Work Sans', sans-serif;
+            }
+        }
+        .toggleBtn{
+            height: 20px;
+            width: 36px;
+            border-radius: 12px;
+            background-color: var(--blue);
+            margin-right: .8rem;
+            display: flex;
+            align-items: center;
+            position: relative;
+            cursor: pointer;
+            .toggler{
+                position: absolute;
+                right: 5%;
+                width: 16px;
+                height: 16px;
+                background-color: white;
+                border-radius: 50%;
+            }
+        }
+        .toggleBtnActive{
+            height: 20px;
+            width: 36px;
+            border-radius: 12px;
+            background-color: var(--blur);
+            margin-right: .8rem;
+            display: flex;
+            align-items: center;
+            position: relative;
+            cursor: pointer;
+            .toggler{
+                position: absolute;
+                left: 5%;
+                width: 16px;
+                height: 16px;
+                background-color: white;
+                border-radius: 50%;
+            }
+        }
+    }
+    .startRecording, .stopRecording{
+        height: 51px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background: rgba(18, 11, 72, 1);
+        outline: none;
+        border: none;
+        border-radius: 12px;
+        color: rgba(250, 253, 255, 1);
+        font-family: 'Work Sans', sans-serif;
+        cursor: pointer;
+        &:hover{
+            background-color: white;
+            color: var(--blue);
+            border: 1px solid var(--blue);
+            transition: all 0.4s ease;
+        }
+    }
+}
+.recordController{
+    width: 551px;
+    height:86px;
+    padding: 12px 40px 12px 16px;
+    position: fixed;
+    bottom: 5%;
+    left: 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 200px;
+    gap: 8px;
+    background: rgba(20, 20, 20, 1);
+
+}
+.extContainer{
+    display: block;
+}
